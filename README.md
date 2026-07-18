@@ -1,4 +1,5 @@
-# Speedy AI Agent
+# Autonomous AI Browser Agent
+
 
 A Chrome extension that turns your browser into an AI-powered automation assistant. Type what you want in the search bar (e.g. *"open Canvas and search for PHY131"*), and it navigates, clicks, and types for you.
 
