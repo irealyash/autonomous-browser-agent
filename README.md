@@ -5,7 +5,7 @@ A Chrome extension that turns your browser into an AI-powered automation assista
 ---
 
 ## 🎥 Demo
-[![Watch the demo](./assets/thumbnail.png)]([https://www.youtube.com/watch?v=YOUR-VIDEO-ID](https://youtu.be/j1oFcvMeUs8?si=K1htWWdhESmr0jsO))
+[![Watch the demo](./assets/thumbnail.png)](https://youtu.be/j1oFcvMeUs8?si=K1htWWdhESmr0jsO)
 
 ---
 
