@@ -14,7 +14,7 @@
     <img src="./assets/thumbnail.png" alt="Watch the demo" width="600px">
   </a>
   
-  <p><i>Click to watch the demo</i></p>
+  <p><i>Click the thumbnail above to watch the demo</i></p>
 </div>
 
 ---
