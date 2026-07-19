@@ -1,29 +1,34 @@
-# Autonomous AI Browser Agent
+# 🤖 Autonomous AI Browser Agent
 
+<div align="center">
+  
+  ![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)
+  ![Chrome](https://img.shields.io/badge/platform-Chrome_Manifest_V3-34A853.svg)
+  ![Gemini](https://img.shields.io/badge/AI-Google_Gemini-4285F4.svg)
 
-A Chrome extension that turns your browser into an AI-powered automation assistant. Type what you want in the search bar (e.g. *"open Canvas and search for PHY131"*), and it navigates, clicks, and types for you.
+  *An AI-powered automation assistant that turns your browser into an agent.*
+
+  <br>
+
+  <a href="https://youtu.be/j1oFcvMeUs8?si=25S0Y7nhc0VpQaIg" target="_blank">
+    <img src="./assets/thumbnail.png" alt="Watch the demo" width="600px">
+  </a>
+  
+  <p><i>Click to watch the demo</i></p>
+</div>
+
 ---
 
-## 🎥 Demo
+## 🚀 Features
 
-<a href="https://youtu.be/j1oFcvMeUs8?si=K1htWWdhESmr0jsO" target="_blank">
-  <img src="./assets/thumbnail.png" alt="Watch the demo">
-</a>
+- **HUD Command Interface:** Hold `P` to invoke the HUD. No more context switching.
+- **Agentic Planning:** Uses Google Gemini to map natural language to specific `GOTO`, `CLICK`, and `TYPE` actions.
+- **Self-Healing Loop:** Implements a 3-retry error recovery strategy with screenshot re-analysis.
+- **Deep Reasoning:** `THINK_AND_REQUERY` allows the agent to visually re-evaluate the page mid-task.
+- **Secure by Design:** API keys are stored in encrypted `chrome.storage.sync`.
+- **Persistent State:** Plans persist through reloads, ensuring continuity for multi-step workflows.
 
----
-
-## Features
-
-- **Search-bar style commands** — Hold **P** to open the HUD, type your request, press Enter
-- **AI-driven execution plans** — Google Gemini converts natural language into steps (GOTO, CLICK, TYPE, etc.)
-- **Auto-recovery** — On failures, the extension captures a screenshot and asks the AI to retry with a new plan (up to 3 retries per step)
-- **THINK_AND_REQUERY** — For complex tasks, the AI can pause, analyze the page visually, and continue with a smarter plan
-- **Smart interactions** — Finds buttons/links by text, fills forms, auto-submits search boxes
-- **HUD UI** — Minimal overlay with search icon, blinking cursor, and choice/text prompts when the AI needs input
-- **Settings page** — Options UI for storing your Gemini API key securely in Chrome sync storage
-- **Plan persistence** — Survives page reloads (e.g. after GOTO) and resumes execution
-
-## Tech Stack
+## 🛠 Tech Stack
 
 | Layer | Tech |
 |-------|------|
@@ -33,7 +38,7 @@ A Chrome extension that turns your browser into an AI-powered automation assista
 | UI | Vanilla JS, inline CSS, HUD overlay |
 | Permissions | storage, history, tabCapture, \<all_urls\> |
 
-## Installation
+## ⚡ Quick Start
 
 1. Clone or download this repo
 2. Open `chrome://extensions/` → Enable **Developer mode** → **Load unpacked**
@@ -44,13 +49,13 @@ A Chrome extension that turns your browser into an AI-powered automation assista
 
 1. Go to any webpage
 2. **Hold P** for ~350ms until the HUD appears at the top
-3. Type your request (e.g. *"search YouTube for piano tutorials"*, *"open Gmail"*, *"what is the capital of India"*)
+3. Type your request (e.g. *"search YouTube for piano tutorials"*, *"open Gmail"*, *"what is the capital of Canada"*)
 4. Press **Enter**
 5. The extension executes the plan and shows the result in the HUD
 
 Press **Escape** anytime to close the HUD.
 
-## Project Structure
+## 🏗 Project Architecture
 
 ```
 ├── manifest.json          # Extension config
@@ -75,7 +80,3 @@ Press **Escape** anytime to close the HUD.
 - `EXTRACT` — Pull data from page  
 - `THINK_AND_REQUERY` — Pause, screenshot, get new plan from AI  
 - `FINAL_ANSWER` — Show result and end  
-
-## License
-
-MIT
