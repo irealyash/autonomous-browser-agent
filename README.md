@@ -2,6 +2,12 @@
 
 
 A Chrome extension that turns your browser into an AI-powered automation assistant. Type what you want in the search bar (e.g. *"open Canvas and search for PHY131"*), and it navigates, clicks, and types for you.
+---
+
+## 🎥 Demo
+[![Watch the demo](./assets/thumbnail.png)]([https://www.youtube.com/watch?v=YOUR-VIDEO-ID](https://youtu.be/j1oFcvMeUs8?si=K1htWWdhESmr0jsO))
+
+---
 
 ## Features
 
